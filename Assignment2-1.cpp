@@ -7,4 +7,4 @@ int main()
     cout << "Our checking account balance is -20 \n ";
     cout << "About 189000 days ago Columbus stood on this spot \n ";
     return 0;
-    }
+}
