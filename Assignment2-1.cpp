@@ -3,8 +3,14 @@ using namespace std;
 
 int main()
 {
-    cout << "We have a long journey of 4276 miles \n ";
-    cout << "Our checking account balance is -20 \n ";
-    cout << "About 189000 days ago Columbus stood on this spot \n ";
+    int miles;
+    miles=4276;
+    int balance;
+    balance=-20;
+    int days;
+    days=189000;
+    cout << "We have a long journey of "<< miles <<" miles \n ";
+    cout << "Our checking account balance is "<< balance <<" balance \n ";
+    cout << "About "<< days << " days ago Columbus stood on this spot \n ";
     return 0;
 }
