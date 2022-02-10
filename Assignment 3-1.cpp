@@ -11,15 +11,17 @@ int main()
     int priceB = 12;
     int priceC = 9;
 
-    cout << "Enter the number of the Tickets sold for classA: ";
+    int total;
+
+    cout << "Enter the number of the Tickets sold for class A: ";
     cin >> classA;
-    cout << "Enter the number of the Tickets sold for classB: ";
+    cout << "Enter the number of the Tickets sold for class B: ";
     cin >> classB;
-    cout << "Enter the number of the Tickets sold for classC: ";
+    cout << "Enter the number of the Tickets sold for class C: ";
     cin >> classC;
 
     total = (classA * priceA)+(classB * priceB)+(classC * priceC);
 
-    cout << "Total price for ticket sold " << total < endl;
+    cout << "Total price for ticket sold " << total << endl;
     return 0;
 }
