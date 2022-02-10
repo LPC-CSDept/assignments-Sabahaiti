@@ -3,23 +3,23 @@ using namespace std;
 
 int main()
 {
-    int class A;
-    int class B;
-    int class C;
+    int classA;
+    int classB;
+    int classC;
 
-    int price A = 15;
-    int price B =12;
-    int price C = 9;
+    int priceA = 15;
+    int priceB = 12;
+    int priceC = 9;
 
-    cout << "Enter the number of the Tickets sold for class A: ";
-    cin >> class A;
-    cout << "Enter the number of the Tickets sold for class B: ";
-    cin >> class B;
-    cout << "Enter the number of the Tickets sold for class C: ";
-    cin >> class C;
+    cout << "Enter the number of the Tickets sold for classA: ";
+    cin >> classA;
+    cout << "Enter the number of the Tickets sold for classB: ";
+    cin >> classB;
+    cout << "Enter the number of the Tickets sold for classC: ";
+    cin >> classC;
 
-    total = (class A * price A)+(class B * price B)+(class C * price C);
+    total = (classA * priceA)+(classB * priceB)+(classC * priceC);
 
     cout << "Total price for ticket sold " << total < endl;
-
+    return 0;
 }
