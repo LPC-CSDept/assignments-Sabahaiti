@@ -6,5 +6,12 @@ using namespace std;
 
 int main()
 {
+    // the variables declear
+    int num1, num2, num3;
+    int sum;
+    double avg;
+    srand(time(0)); // random number time function
+
+    // display the three random numbers
     
 }
