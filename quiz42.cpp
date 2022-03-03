@@ -23,7 +23,7 @@ int main()
     const double six_tenKg = 3.70;
     const double ten_twentyKg = 4.80;
 
-    //fir the weight and the distance
+    //for the weight and the distance
     
     cout <<" Enter the distance :" <<endl;
     cin >> distance;
