@@ -24,8 +24,7 @@ int main()
     const double ten_twentyKg = 4.80;
 
     //fir the weight and the distance
-    cout <<"Enter the weight :" <<endl;
-    cin >> weight;
+    
     cout <<" Enter the distance :" <<endl;
     cin >> distance;
 
