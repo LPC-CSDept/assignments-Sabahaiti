@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    // declear the caraible
+    // declare the caraible
     int menu;
     double area;
     double radius;
