@@ -11,7 +11,7 @@ int main()
     double length;
     double width;
     double base;
-    double heigth;
+    double height;
 
     double π = 3.14159; //for the circle equation pi
 
@@ -41,7 +41,7 @@ int main()
 
           }
         area = π * radius * radius;
-        cout <<" Circle are is equal to " << area <<endl;
+        cout <<" Circle area is equal to " << area <<endl;
         break;
 
         // for the rectangle
@@ -55,7 +55,45 @@ int main()
                 cin >> length;
             }
 
+            cout <<"width of the rectangle : \n";
+            cin >> width;
+        if (width <0)
+            {
+                cout << " Enter width one more time : \n ";
+                cin >> width;
+            }
+        area = length * width;
+        cout << " Rectangle area is equal to" <<area <<endl;
+        break;
 
+            //for the triangle base and height and area
+            case 3:
+            cout <<"base of the Triangle : \n";
+            cin >> base;
+        
+        if (base <0)
+            {
+                cout <<"Enter base one more time : \n";
+                cin >> base;
+            }
+            cout <<"height of the Triangle : \n";
+            cin >> height;
+        if (height <0)
+            {
+                cout <<"Enter height one more time : \n";
+                cin >> height;
+
+            }
+        area = base * height * 0.5;
+        cout <<"Triangle area is qual to " << area << endl;
+        break;
+
+            case 4:
+            cout <<"The menu quit :\n";
+            break;
+
+            default:
+            cout <<"wrong menu item :\n";
 
        }
 
