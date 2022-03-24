@@ -3,14 +3,18 @@ using namespace std;
 // make program that shows the N to the power of 0, 1,2,3,...M
 int main()
 {
-    int N, M;
+    double N; 
+    int M;
+    int pow;
 
     cout << "Enter you input:";
     cin >> N;
-    M =1;
-    while (M <=N){
-        cout << M << "\t"<< N* M << endl;
-        M +=1;
+    
+    pow = 1;
+    for (int i=0; i<N; i++)
+    {
+        pow *= N;
     }
+    cout << "power number :" << pow << endl;
 
 }
