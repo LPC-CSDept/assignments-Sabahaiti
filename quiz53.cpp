@@ -5,23 +5,34 @@ using namespace std;
 //begin < end
 int main()
 {
-    int begin, end;
-    int current_num;
-    int flag =0;
+    int begin=1;
+    int end=100;
+    int i;
+    int flag;
+    
 
-    do {
-        cout << " two number for the range";
-        cin >> begin >> end;
-    } while ((begin > end) || (begin < 1) || (end > 100));
+    cout <<"prime numbers:";
+    cin>>begin >>end;
 
-    for (int i=2 ; i < current_num ; i++){
-        if (current_num % i ==0){
-            flag = 1;
-            break;
+    cout <<"prime numbers between" << begin <<"and "<<end<<"are:";
+
+    while (begin < end)
+    {
+
+        flag=0;
+
+        for (int i=2; i<=begin/2; i++)
+        {
+            if(begin % i==0)
+            {
+                flag =1;
+                break;
+            }
         }
+        if (flag==0)
+            cout << begin <<"";
+        begin++;
     }
-    if (flag)
-        cout << "not prime number " << endl;
-    else
-        cout << "Prime number " << endl;  
-}
+
+    return 0;
+}       
