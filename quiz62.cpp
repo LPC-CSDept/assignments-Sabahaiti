@@ -7,7 +7,7 @@ using namespace std;
 //then find the min number among these values. 
 //We need to develop three functions as follows:
 
-void getRandom(int &n1, int &n2, int &n3);
+void getRandnum(int &n1, int &n2, int &n3)
 {
     n1= rand();
     n2=rand();
@@ -21,4 +21,19 @@ int findMin(int n1, int n2, int n3)
     return n2;
 
     return n3;
+}
+void printResult(int n1, int n2, int n3, int min)
+{
+    cout << "Three random numbers: "<< n1 << " " << n2 << " " << n3 << endl;
+    cout << "Min :" << min << endl;
+}
+
+int main()
+{
+    int n1, n2, n3;
+    int min;
+    getRandnum(n1, n2, n3);
+    min= findMin(n1, n2, n3);
+    printResult(n1, n2, n3, min);
+
 }
