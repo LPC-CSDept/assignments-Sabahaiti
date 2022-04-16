@@ -9,9 +9,9 @@ using namespace std;
 
 void getRandnum(int &n1, int &n2, int &n3)
 {
-    n1= rand();
-    n2=rand();
-    n3=rand();
+    n1= rand()%10;
+    n2=rand()%10;
+    n3=rand()%10;
 }
 int findMin(int n1, int n2, int n3)
 {
