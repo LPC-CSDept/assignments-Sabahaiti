@@ -12,3 +12,18 @@ int getRdnum(void);
 {
     return rand()% 50 +1;
 }
+
+int isGreater(int n);
+{
+
+    if (n> num)
+    {
+        num=n;
+        return 1;
+    } else
+    {
+        num =n;
+        return 0;
+    }
+    
+}
