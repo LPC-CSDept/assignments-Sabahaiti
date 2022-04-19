@@ -25,5 +25,12 @@ int isGreater(int n);
         num =n;
         return 0;
     }
+    int main()
+{
+    int N=10;
+    ofstream ofs;
+
+    ofs.open ("number.txt");
+    if(!ofs)
     
 }
