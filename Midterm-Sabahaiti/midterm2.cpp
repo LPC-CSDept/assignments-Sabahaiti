@@ -29,3 +29,10 @@ int main()
 
         cout <<sname<<" "<< score1 <<" " << score2<< endl;
 
+        sum = score1 +score2;
+        avg = sum/2.0;
+
+        cout <<"sum:" << sum << "avg: " << avg << endl;
+
+    }
+
