@@ -32,7 +32,11 @@ int main()
         sum = score1 +score2;
         avg = sum/2.0;
 
-        cout <<"sum:" << sum << "avg: " << avg << endl;
+       
+
+        cout <<"sum:" << sum << " " << "avg: " << avg << endl;
 
     }
+   //total number of students who have an average greater than 80.
+}
 
