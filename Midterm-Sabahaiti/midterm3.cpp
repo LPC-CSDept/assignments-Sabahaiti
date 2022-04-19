@@ -32,5 +32,18 @@ int isGreater(int n);
 
     ofs.open ("number.txt");
     if(!ofs)
-    
+    {
+        cerr <<"File open Error\n";
+        exit(0);
+
+    }
+    for(int i=0; i<N;i++)
+    {
+        int num= getRdnum();
+        cout <<num <<" ";
+        if(isGreater(num))
+        ofs <<num<<" ";
+
+    }
+    ofs.close();
 }
