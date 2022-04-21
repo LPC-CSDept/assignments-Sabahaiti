@@ -8,6 +8,7 @@ int main()
     ofstream ofs;
     int score1, score2;
     int sum;
+    int cnt;
     string sname;
     float avg;
 
@@ -36,7 +37,11 @@ int main()
 
         cout <<"sum:" << sum << " " << "avg: " << avg << endl;
 
+        if(avg >80)
+            cnt++;
+
     }
    //total number of students who have an average greater than 80.
+   cout << "The total of students who have an average greater than 80: " << cnt << endl;
 }
 
