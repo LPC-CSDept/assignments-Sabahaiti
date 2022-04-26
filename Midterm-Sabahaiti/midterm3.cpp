@@ -15,6 +15,7 @@ int getRdnum(void)
 }
 
 // int isGreater(int n);
+
 int isGreater(int n)
 {
     static int num = 0;
