@@ -25,3 +25,9 @@ int getRdnum(int n1, int n2)
     return rand()% (n2-(n1+1)+1)+n1+1;
 }
 
+int main()
+{
+    cout << getRdnum() << endl;
+    cout << getRdnum(20) << endl;
+    cout << getRdnum(40,140) << endl;
+}
