@@ -1,7 +1,7 @@
-#include <iostrema>
+#include <iostream>
 using namespace std;
 
-void printtriangle(int numbers [][3]. int)
+void printtriangle(int numbers [][3], int);
 int main()
 {
     const int SIZE = 3;
@@ -15,8 +15,15 @@ int main()
 
 void printtriangle(int num[][3], int size)
 {
-    for(int i=0; i<SIZE; i++)
+    for(int i=0; i<size; i++)
     {
-        for(int j=0; j<SIZE; j++)
+        for(int j=0; j<size; j++)
+        {   
+            if (j <=i)
+            {
+                cout << num[i][j] <<"\t";
+            }
+        }
+            cout << endl;
     }
 }
