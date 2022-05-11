@@ -12,19 +12,19 @@ int main()
     {
         if (i==0 && i+1 <N)
         {
-            if ( abs (n[i] - n[i+1]) < 10) // find the first difference of 10
+            if ( abs (number[i] - number[i+1]) < 10) // find the first difference of 10
             {
-                cout << n[i] <<" less than 10 \n ";
+                cout << number[i] << endl;
             }
-        }else (i==N-1 && i> 0)
+        }else if (i==N-1 && i>0)
         {
-              if (abs (n[i] - n[i-1]) < 10) // find last difference of 10
+              if (abs (number[i] - number[i-1]) < 10) // find last difference of 10
             {
-                cout<< n[i] <, endl;
+                cout<< number[i] << endl;
             }
-        }else if (( abs ( n[i] - n[i+1]) <10) && (abs (n[i]-n[i-1])<10)
+        }else if (( abs ( number[i] - number[i+1]) <10) && (abs (number[i]-number[i-1])< 10))
         {
-            cout << n[i] << endl;
+            cout << number[i] << endl;
         }
           
     }   
