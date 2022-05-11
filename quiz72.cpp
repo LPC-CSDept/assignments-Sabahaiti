@@ -15,5 +15,8 @@ int main()
 
 void printtriangle(int num[][3], int size)
 {
-    
+    for(int i=0; i<SIZE; i++)
+    {
+        for(int j=0; j<SIZE; j++)
+    }
 }
