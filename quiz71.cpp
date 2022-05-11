@@ -10,7 +10,7 @@ int main()
 
     for(int i=0; i< N; i++)
     {
-        if i==0 && i+1 <N)
+        if (i==0 && i+1 <N)
         {
             if ( abs (n[i] - n[i+1]) < 10) // find the first difference of 10
             {
