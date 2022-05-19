@@ -3,6 +3,14 @@
 using namespace std;
 
 
+struct Employee
+{
+    int id;
+    string fname;
+    string lname;
+    
+}
+
 
 
 
