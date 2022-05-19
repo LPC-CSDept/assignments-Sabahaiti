@@ -11,13 +11,15 @@ struct Employee
     string lname;
     double salary;
     string departmentname;
-    int month;
+    // int month;
+    string month;
     int day;
     int year;
 
 };
 
 void printEmployee(Employee e);
+int makeStructArray(Employee e[]);
 
 int main()
 {
@@ -25,7 +27,7 @@ int main()
    int numofRecords;
    string username;
 
-   
+    makeStructArray(e);
     
 }
 int makeStructArray(Employee e[])
@@ -34,11 +36,16 @@ int makeStructArray(Employee e[])
     int i;
 
     ifs.open("employee.txt");
-    if(ifs)
-    {
-        i=0;
-        
-    }
+    i =0;
+
+    cout << i << endl;
+     while ( ifs >> e[i].id >> e[i].fname >> e[i].lname >> e[i].salary >> e[i].departmentname >> e[i].month >> e[i].day >> e[i].year)
+     {
+         cout << i << endl;
+        cout << e[i].id << e[i].fname << e[i].lname << e[i].salary << e[i].departmentname << e[i].month << e[i].day << e[i].year << endl;
+        i++;   
+     }
+     return i;
 }
 
 
