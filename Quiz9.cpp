@@ -17,6 +17,22 @@ struct Employee
 
 };
 
+void printEmployee(Employee e);
+
+int main()
+{
+    Employee e;
+    ifstream ifs;
+    ifs.open("employee.txt");
+    if(ifs)
+    {
+        while (ifs >> e.id >> e.fname >>e. lname)
+        {
+            
+        }
+    }
+}
+
 
 
 
