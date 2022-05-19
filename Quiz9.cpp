@@ -21,18 +21,25 @@ void printEmployee(Employee e);
 
 int main()
 {
-    Employee e;
+   Employee e[10];
+   int numofRecords;
+   string username;
+
+   
+    
+}
+int makeStructArray(Employee e[])
+{
     ifstream ifs;
+    int i;
+
     ifs.open("employee.txt");
     if(ifs)
     {
-        while (ifs >> e.id >> e.fname >>e. lname)
-        {
-            
-        }
+        i=0;
+        
     }
 }
-
 
 
 
