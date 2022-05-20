@@ -29,6 +29,7 @@ int main()
 
     makeStructArray(e);
     
+    
 }
 int makeStructArray(Employee e[])
 {
@@ -42,7 +43,7 @@ int makeStructArray(Employee e[])
      while ( ifs >> e[i].id >> e[i].fname >> e[i].lname >> e[i].salary >> e[i].departmentname >> e[i].month >> e[i].day >> e[i].year)
      {
          cout << i << endl;
-        cout << e[i].id << e[i].fname << e[i].lname << e[i].salary << e[i].departmentname << e[i].month << e[i].day << e[i].year << endl;
+        cout << e[i].id <<" "<< e[i].fname << " "<< e[i].lname << " "<< e[i].salary <<" " << e[i].departmentname << " "<< e[i].month <<" "<< e[i].day <<" "<< e[i].year <<" "<< endl;
         i++;   
      }
      return i;
