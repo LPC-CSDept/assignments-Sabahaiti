@@ -69,5 +69,15 @@ void findSalary(Employee e[], int count)
         }
     }
 }
-
+void computerDepartment(Employee e[], int count)
+{
+    cout<<"The employee in Computer department" << endl;
+    for (int i=0; i<count; i++)
+    {
+        if(e[i].departmentname =="computer")
+        {
+            cout<<e[i].id<<" "<<e[i].fname<<" "<<e[i].lname<<" "<<e[i].salary<<" "<<e[i].departmentname<<" "<<e[i].month<<" "<<e[i].day<<" "<<e[i].year<<endl;
+        }
+    }
+}
 
