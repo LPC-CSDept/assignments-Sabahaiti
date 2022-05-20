@@ -5,5 +5,8 @@ using namespace std;
 
 int main()
 {
-    
+    ofstream ofs;
+    int i;
+    int N;
+    int randnum;
 }
