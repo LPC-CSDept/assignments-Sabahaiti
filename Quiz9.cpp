@@ -19,6 +19,7 @@ struct Employee
 };
 
 void printEmployee(Employee e);
+void findSalary(Employee e[],int count);
 int makeStructArray(Employee e[]);
 
 int main()
@@ -26,11 +27,18 @@ int main()
    Employee e[10];
    int numofRecords;
    string username;
-
+   
+   int count;
+   if(count>0)
+   {
+       cout<< count <<endl;
+   }
+   findSalary(e,count);
     makeStructArray(e);
-    
+
     
 }
+
 int makeStructArray(Employee e[])
 {
     ifstream ifs;
@@ -48,6 +56,18 @@ int makeStructArray(Employee e[])
      }
      return i;
 }
-
+void findSalary(Employee e[], int count)
+{
+    count=0;
+    cout <<"Employee salary greater than 100,000"<<endl;
+   
+    for(int i=0; i<count; i++)
+    {
+        if(e[i].salary >100000)
+        {
+            cout <<e[i].id <<" " << e[i].fname <<" "<<e[i].lname<<" "<<e[i].salary <<" "<< e[i].departmentname<<" "<<e[i].month<<" "<<e[i].day<<" "<<e[i].year<<endl;
+        }
+    }
+}
 
 
