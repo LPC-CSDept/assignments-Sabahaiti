@@ -24,4 +24,9 @@ int main()
     const int SIZE2 =10;
     int numbers1[SIZE1]={2,3,5,9,10};
     int numbers2[SIZE2]={1,2,3,5,9,10,11,13,15,17};
+
+    if(isSubset(numbers1, numbers2, SIZE1, SIZE2))
+        cout <<"numbers1 is subset of numbers2" << endl;
+    else
+        cout <<"numbers1 is not a subset of numbers2" << endl;
 }
