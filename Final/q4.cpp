@@ -21,11 +21,22 @@ Grade g;
 
 int main()
 {
+    string buf;
+    stringstream ss;
+
     ifstream ifso;
     ifso. open ("grades.txt", fstream::in);
     ofstream ofso;
     ofso.open ("grades.bin", fstream::out);
+
+    if(!ifso || !ofso)
+    {
+        cout << "open Error\n";
+        exit(0);
+    }
+
     
+
 
 }
 
