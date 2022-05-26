@@ -65,8 +65,11 @@ int main()
         ss.clear();
         ofso.write((char*) &g,sizeof(g));
 
+        cout <<i << "::" <<sizeof(g)<<"bytes writing";
         
+        i++;
     }
+
 
 
 
