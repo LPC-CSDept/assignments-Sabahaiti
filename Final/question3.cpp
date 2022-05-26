@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-bppl isSubset(int numbers1[], int numbers2[], int SIZE1, int SIZE2)
+bool isSubset(int numbers1[], int numbers2[], int SIZE1, int SIZE2)
 {
     int i=0;
     int j=0;
@@ -10,6 +10,10 @@ bppl isSubset(int numbers1[], int numbers2[], int SIZE1, int SIZE2)
         for(j=0; j<SIZE2; j++)
         {
             if(numbers1[i] == numbers2[j])
+            break;
         }
+        if(j == SIZE2)
+        return 0;
     }
+    return 1;
 }
