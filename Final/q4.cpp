@@ -56,7 +56,7 @@ int main()
                 case 2:
                     g.ssn = field;
                 case 3:
-                    g.score= field;
+                    g.score = field;
                     break;
                     
             }
